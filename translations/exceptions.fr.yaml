@@ -1,0 +1,19 @@
+# App/Exception
+api: "L'API %url% appelée en %method% a renvoyé le code retour %status_code%."
+bad_property: "La propriété %property% n'existe pas dans la Class %class%."
+catalog:
+    csv_first_line: "La première ligne du CSV a une réponse inattendue : %first_line%."
+    required_column: "Certaines colonnes requises non pas été configurées pour le catalogue '%catalog%': %requirements%."
+empty_parameter: "Le paramètre suivant est vide : %class%::%method%(%parameter%)."
+enum_parameter: "Le paramètre \"%parameter%\" n'est pas compris dans la liste suivante : %valid_parameters%"
+exception: "Exception sans traduction."
+file: "L'action suivante : \"%action%\" n'a pas pu être réalisée sur le fichier : %file_path%"
+not_implemented: "La méthode suivante n'a pas été implémentée : %class%::%method%."
+null_parameter: "Le paramètre suivant est null : %class%::%method%(%parameter%)."
+reach: "Du code qui n'aurait jamais dû être atteint s'est pourtant déclenché."
+statement: 'Un problème est survenu lors de l''exécution de la requête suivante : '
+workflow_transition: 'La transition "%transition%" depuis le (ou les) état(s) "%marking%" sur le workflow "%name%" n''a pas pu être appliqué sur "%subject%".'
+
+# Symfony Message Exception
+http:
+    file_not_found: "Le fichier \"%file%\" n'existe pas ou a été supprimé."

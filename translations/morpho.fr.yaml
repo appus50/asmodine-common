@@ -1,0 +1,61 @@
+body:
+    ankle: tour de cheville
+    arm: longueur de bras
+    bicep: tour de bras
+    bra: tour de buste
+    bust_height: hauteur pointe des seins
+    bust_separation: écart des seins
+    calf: tour de mollet
+    chest: tour de poitrine
+    crotch: enfourchure # crotch_back + crotch_front
+    crotch_back: enfourchure arrière
+    crotch_front: enfourchure avant
+    finger: tour de doigt
+    foot_length: longueur du pied
+    foot_width: largeur du pied
+    hand_length: longueur de la main
+    hand_width: largeur de la main
+    head: tour de tête
+    height: taille # Hauteur totale de la personne
+    hip_height: hauteur de la taille aux hanches
+    hip_high: tour de hanches # Ou petites hanches (9-10 cm sous la taille)
+    hips: tour de bassin # Au plus fort des hanches et des fessiers
+    inseam: longueur entrejambe sol
+    knee: tour de genou
+    length_back: Longueur dos # hauteur d'épaules aux hanches via la taille (3D) shoulder_to_waist_back + waist_to_hips_back
+    length_front: Longueur devant # Creux du cou aux hanches via la taille (3D)  shoulder_to_waist_front + waist_to_hips_front
+    neck: tour de cou
+    neck_to_floor: hauteur du creux du cou au sol
+    shoulder: Largeur d'épaules
+    shoulder_length: Longueur d'épaule # Du cou au bout de l'épaule (environ 10 à 20 cm)
+    shoulder_to_waist_back: hauteur épaule à la taille (dos)
+    shoulder_to_waist_front: hauteur épaule à la taille (devant)
+    thigh: tour de cuisse
+    waist: tour de taille
+    waist_to_floor: hauteur de la taille au sol
+    waist_to_hips_back: longueur de la taille aux hanches (dos) # 3D
+    waist_to_hips_front:  longueur de la taille aux hanches (devant) # 3D
+    width_back: carrure dos
+    width_front: carrure devant
+    wrist: tour de poignet
+eye:
+    black: noirs
+    blue: bleus
+    brown: marrons
+    green_gray: verts
+hair:
+    black: noirs
+    blond: blonds
+    brown: bruns
+    honey: miels / cuivrés
+    light_brown: châtains
+    others: autres
+    red: roux
+    white: gris / blanc
+skin:
+    dark: foncée
+    light: claire
+    matte: mate
+    pink: rosée
+    very_dark: très foncée
+    very_light: très claire

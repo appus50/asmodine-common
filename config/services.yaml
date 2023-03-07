@@ -1,0 +1,16 @@
+parameters:
+    locale: 'fr'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+        bind:
+            $projectDir: '%kernel.project_dir%'
+
+    Asmodine\CommonBundle\:
+        resource: '../src/*'
+        exclude: '../src/{DependencyInjection,Resources}'
+

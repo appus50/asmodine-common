@@ -1,0 +1,37 @@
+image:  asmodine/php7.2-alpine-ci:1.0.0
+
+stages:
+  - install
+  - tests
+  - report
+
+install:
+  stage: install
+  script:
+    - php -d memory_limit=-1 $(which composer) install
+  artifacts:
+    paths:
+      - bin
+      - vendor
+    expire_in: 2 hrs
+    when: on_success
+
+tests:phpunit:
+  stage: tests
+  dependencies:
+    - install
+  script:
+    - ./bin/phpunit
+
+report:checkstyle:
+  stage: report
+  dependencies:
+    - install
+  script:
+    - sh ci/php-cs-fixer.sh
+  artifacts:
+    paths:
+      - var/patch.diff
+    expire_in: 24 hrs
+    when: on_failure
+  allow_failure: true
